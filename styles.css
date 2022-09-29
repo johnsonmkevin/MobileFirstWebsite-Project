@@ -1,0 +1,146 @@
+*,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.siteheader {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+
+.logo {
+    height: 30px;
+    width: 25px;
+}
+
+
+.navbar {
+    width: 30%;
+}
+
+.navbar-ulList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navbar-ulList li {
+    text-decoration: none;
+    list-style: none;
+    padding: .5rem .4rem;
+    margin: .2rem;
+    border-radius: 50%;
+
+}
+
+.main_title {
+    text-align: center;
+}
+
+.navbar-ulList li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.navbar-ulList li:hover {
+    background-color: teal;
+
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 29px;
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+.shoes {
+    max-width: 200px;
+    height: 110px;
+}
+
+.sneaker_images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+
+.shoeName {
+    padding-top: 30px;
+    padding-left: 15px ;
+}
+
+
+@media (max-width: 450px) {
+    .navbar-ulList li {
+        display: none;
+    }
+
+    .logo-item2 {
+        display: none;
+    }
+
+    .logo-item3 {
+        display: none;
+    }
+
+    .logo-item4 {
+        display: none;
+    }
+
+    .logo-item5 {
+        display: none;
+    }
+
+    .logo-images {
+        display:inline;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 29px;
+
+}
+
+
+
+
+}
