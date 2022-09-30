@@ -7,14 +7,71 @@ body {
 }
 
 
+
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    background-image: url(./WebsiteImages/basketballsonground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pose {
+    background-color: white;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    padding: 10px 10px;
+    position: relative;
+
+}
+
+.card {
+    height: 50vh;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 5px;
+
+
+}
+
+.card-btn {
+    padding: 10px 10px;
+    background-color: black;
+    border-radius: 15px;
+    transition: all .9s ease-in-out;
+    color: white;
+    width: 8px 8px;
+    margin: 1px 60px 1px 60px;
+
+}
+
+.card-btn:hover {
+    background-color: goldenrod;
+    color: black;
+
+}
+
+
 .siteheader {
     width: 100%;
     padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 
 }
+
+.title-content {
+    background-color: white;
+    padding: 8px 0px;
+}
+
 
 .logo-images {
     display: flex;
@@ -93,16 +150,290 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+    background-color: white;
+    align-content: center;
+
 }
 
 
 .shoeName {
-    padding-top: 30px;
-    padding-left: 15px ;
+    padding-bottom: 60px;
+    padding-right: 4px;
+    text-align: center;
 }
 
 
+
+.pose {
+    background-color: white;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    padding: 10px 10px;
+    position: relative;
+
+}
+
+.card {
+    height: 50vh;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 5px;
+
+
+}
+
+.card-btn {
+    padding: 10px 10px;
+    background-color: black;
+    border-radius: 15px;
+    transition: all .9s ease-in-out;
+    color: white;
+    width: 8px 8px;
+    margin: 1px 60px 1px 60px;
+
+}
+
+.card-btn:hover {
+    background-color: goldenrod;
+    color: black;
+
+}
+
+
+.hover-1 {
+    background-color: aqua;
+    color: white;
+    transition: all .9s ease-in-out;
+
+}
+
+
+.SeanKempDunk {
+    background-image: url(./WebsiteImages/seankempdunk.jpg);
+
+}
+
+.SeanKempDunk2 {
+    background-image: url(./WebsiteImages/seankempdunk2.jpg)
+}
+
+
+.MichaelJordanStance {
+    background-image: url(./WebsiteImages/michaelpic1.jpg);
+}
+
+.MichaelJordanStance2 {
+    background-image: url(./WebsiteImages/michaeljordandunk2.jpg);
+}
+
+.SirCharlesBarkley {
+    background-image: url(./WebsiteImages/charlesbarkleypic2.jpg);
+}
+
+.SirCharlesBarkley2 {
+    background-image: url(./WebsiteImages/charlesbarkleydribbling.jpg);
+}
+
+
+
+.Penny1 {
+    background-image: url(./WebsiteImages/penny1.jpg);
+}
+
+.Penny2 {
+    background-image: url(./WebsiteImages/penny2.jpg);
+
+}
+
+.KobeBryant-1 {
+    background-image: url(./WebsiteImages/kobepose.jpg);
+}
+
+.KobeBryant-2 {
+    background-image: url(./WebsiteImages/kobepic2.jpg);
+}
+
+
+.pose p {
+    padding: 10px;
+    text-align: center;
+}
+
+.pose h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.pose a {
+    text-align: center;
+    display: block;
+}
+
+
+.pose:hover {
+    /*hover notworking for some reason, worked when I deleted my borders*/
+    cursor: pointer;
+    transition: all .05s ease 0s;
+    transform: scale(1.03);
+
+}
+
+
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+
+}
+
+
+
+
+.shoes {
+    max-width: 200px;
+    height: 110px;
+    margin-bottom: 50px;
+}
+
+
+
+.move-1 {
+    position: absolute;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius:30%;
+    top: 50%;
+    font-size: 16px;
+    background-color: green;
+
+}
+
+.move-2 {
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    margin-right: 5px;
+    right: 10px;
+    background-color: green;
+    font-size: 16px;
+    border-radius: 30%;
+
+
+}
+
+.move-3 {
+    position: absolute;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius:30%;
+    top: 50%;
+    font-size: 16px;
+    background-color: red;
+
+}
+
+
+.move-4 {
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    margin-right: 5px;
+    right: 10px;
+    background-color: red;
+    font-size: 16px;
+    border-radius: 30%;
+
+
+}
+
+.move-5 {
+    position: absolute;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius:30%;
+    top: 50%;
+    font-size: 16px;
+    background-color: orangered;
+
+}
+
+.move-6 {
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    margin-right: 5px;
+    right: 10px;
+    background-color: orangered;
+    font-size: 16px;
+    border-radius: 30%;
+
+
+}
+
+.move-7 {
+    position: absolute;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius:30%;
+    top: 50%;
+    font-size: 16px;
+    background-color: blue;
+
+
+}
+
+.move-8 {
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    margin-right: 5px;
+    right: 10px;
+    background-color: blue;
+    font-size: 16px;
+    border-radius: 30%;
+
+
+}
+
+.move-9 {
+    position: absolute;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius:30%;
+    top: 50%;
+    font-size: 16px;
+    background-color: purple;
+
+
+}
+
+.move-10 {
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    margin-right: 5px;
+    right: 10px;
+    background-color: purple;
+    font-size: 16px;
+    border-radius: 30%;
+
+}
+*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 10px;
+    margin-top: 25px;
+
+}
 
 
 @media (max-width: 450px) {
@@ -127,22 +458,24 @@ body {
     }
 
     .logo-images {
-        display:inline;
-}
+        display: inline;
+    }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 25px;
-    height: 29px;
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 29px;
 
-}
+    }
 
-
+    .container-2 {
+        display: none;
+    }
 
 
 }
