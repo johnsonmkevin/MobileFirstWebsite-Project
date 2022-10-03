@@ -118,3 +118,4 @@ function kobe2() {
 
 let kobePic2 = document.getElementById("purple-right");
 kobePic2.addEventListener("click", kobe2);
+

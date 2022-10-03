@@ -1,16 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
-
-
-
-body {
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
-
-
 
 .container-2 {
     display: flex;
@@ -39,8 +32,6 @@ body {
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 5px;
-
-
 }
 
 .card-btn {
@@ -51,7 +42,6 @@ body {
     color: white;
     width: 8px 8px;
     margin: 1px 60px 1px 60px;
-
 }
 
 .card-btn:hover {
@@ -60,15 +50,14 @@ body {
 
 }
 
-
 .siteheader {
-    width: 100%;
+    width: auto;
     padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-
+    height: 100px;
 }
 
 .title-content {
@@ -79,9 +68,11 @@ body {
 
 .logo-images {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 100%;
+
+
 }
 
 
@@ -90,35 +81,19 @@ body {
     width: 25px;
 }
 
-
 .navbar {
-    width: 30%;
+    width: 100%;
+    justify-content: center;
 }
 
-.navbar-ulList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+
 
 .navbar-ulList li {
-    text-decoration: none;
-    list-style: none;
-    padding: .5rem .4rem;
+    padding: 16px 20px;
     margin: .2rem;
     border-radius: 50%;
+    display: flex;
 
-}
-
-.main_title {
-    text-align: center;
-    font-family:'Barlow Condensed', sans-serif;
-}
-
-.navbar-ulList li a {
-    text-decoration: none;
-    list-style: none;
-    color: black;
 }
 
 .navbar-ulList li:hover {
@@ -126,23 +101,15 @@ body {
 
 }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 25px;
-    height: 29px;
-
+.main_title {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 20px;
+.navbar-ulList li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
 }
 
 
@@ -275,21 +242,14 @@ body {
     cursor: pointer;
     transition: all .05s ease 0s;
     transform: scale(1.03);
-
 }
 
-
-
-.nav-bar {
+.navbar-ulList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     background-color: white;
-
 }
-
-
-
 
 .shoes {
     max-width: 200px;
@@ -297,17 +257,14 @@ body {
     margin-bottom: 50px;
 }
 
-
-
 .move-1 {
     position: absolute;
     padding: 4px;
     margin-left: 5px;
-    border-radius:30%;
+    border-radius: 30%;
     top: 50%;
     font-size: 16px;
     background-color: green;
-
 }
 
 .move-2 {
@@ -319,21 +276,17 @@ body {
     background-color: green;
     font-size: 16px;
     border-radius: 30%;
-
-
 }
 
 .move-3 {
     position: absolute;
     padding: 4px;
     margin-left: 5px;
-    border-radius:30%;
+    border-radius: 30%;
     top: 50%;
     font-size: 16px;
     background-color: red;
-
 }
-
 
 .move-4 {
     position: absolute;
@@ -344,15 +297,13 @@ body {
     background-color: red;
     font-size: 16px;
     border-radius: 30%;
-
-
 }
 
 .move-5 {
     position: absolute;
     padding: 4px;
     margin-left: 5px;
-    border-radius:30%;
+    border-radius: 30%;
     top: 50%;
     font-size: 16px;
     background-color: orangered;
@@ -376,7 +327,7 @@ body {
     position: absolute;
     padding: 4px;
     margin-left: 5px;
-    border-radius:30%;
+    border-radius: 30%;
     top: 50%;
     font-size: 16px;
     background-color: blue;
@@ -401,7 +352,7 @@ body {
     position: absolute;
     padding: 4px;
     margin-left: 5px;
-    border-radius:30%;
+    border-radius: 30%;
     top: 50%;
     font-size: 16px;
     background-color: purple;
@@ -424,7 +375,7 @@ body {
 .footer {
     position: fixed;
     bottom: 0;
-    background-color: white;
+    background-image: url(./WebsiteImages/bballcourt.jpg);
     width: 100%;
     text-align: center;
     border-top: 2px solid black;
@@ -434,9 +385,31 @@ body {
 }
 
 
-@media (max-width: 450px) {
-    .navbar-ulList li {
-        display: none;
+@media only screen and (max-width: 600px) {
+    .navbar-ulList {
+        flex-direction: column;
+        background-image: url(./WebsiteImages/bballcourt.jpg); 
+        margin-top: 40px;
+
+    }
+
+    .siteheader {
+        flex-direction: column;
+        margin: 0px 0px 70px 0px;
+        width: 100%;
+        background-image: url(./WebsiteImages/bballcourt.jpg);
+        
+    }
+
+    .main_title {
+            padding-top: 45px;
+
+    }
+
+    .logo-images {
+        width: 100%;
+    
+        
     }
 
     .logo-item2 {
@@ -455,21 +428,6 @@ body {
         display: none;
     }
 
-    .logo-images {
-        display: inline;
-    }
-
-    .toggle-button {
-        position: absolute;
-        top: .75rem;
-        right: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 25px;
-        height: 29px;
-
-    }
 
     .container-2 {
         display: none;
