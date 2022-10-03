@@ -1,4 +1,8 @@
-*,
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+
+
 body {
     padding: 0;
     margin: 0;
@@ -108,6 +112,7 @@ body {
 
 .main_title {
     text-align: center;
+    font-family:'Barlow Condensed', sans-serif;
 }
 
 .navbar-ulList li a {
@@ -177,7 +182,7 @@ body {
 
 .card {
     height: 50vh;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     background-size: cover;
     border-radius: 5px;
 
@@ -201,13 +206,6 @@ body {
 
 }
 
-
-.hover-1 {
-    background-color: aqua;
-    color: white;
-    transition: all .9s ease-in-out;
-
-}
 
 
 .SeanKempDunk {
@@ -422,7 +420,7 @@ body {
     border-radius: 30%;
 
 }
-*/
+
 .footer {
     position: fixed;
     bottom: 0;
