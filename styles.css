@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+
+.siteheader {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+
 .container-2 {
     display: flex;
     justify-content: space-around;
@@ -16,7 +23,12 @@
     background-attachment: fixed;
 }
 
-.pose {
+.logo {
+    height: 40px;
+    width: 30px;
+}
+
+.image_card {
     background-color: white;
     margin: 15px;
     width: 250px;
@@ -24,6 +36,7 @@
     box-shadow: 5px 5px black;
     padding: 10px 10px;
     position: relative;
+    gap: 10px;
 
 }
 
@@ -50,19 +63,9 @@
 
 }
 
-.siteheader {
-    width: auto;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    height: 100px;
-}
 
-.title-content {
-    background-color: white;
-    padding: 8px 0px;
+.companyLogo {
+    padding-left: 15px;
 }
 
 
@@ -71,39 +74,41 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-
+    flex-wrap: wrap;
 
 }
 
-
-.logo {
-    height: 30px;
-    width: 25px;
-}
-
-.navbar {
-    width: 100%;
-    justify-content: center;
+.navbar-ulList ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 
 .navbar-ulList li {
-    padding: 16px 20px;
-    margin: .2rem;
-    border-radius: 50%;
+    margin-right: 10px;
+    border-radius: 60%;
     display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif, 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 
 }
+
 
 .navbar-ulList li:hover {
-    background-color: teal;
+    background-image: url(./WebsiteImages/bballcourt.jpg);
+
 
 }
+
 
 .main_title {
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    margin: 70px 0px 10px 0
 }
 
 .navbar-ulList li a {
@@ -112,10 +117,10 @@
     color: black;
 }
 
-
 .shoes {
     max-width: 200px;
     height: 110px;
+    margin-bottom: 50px;
 }
 
 .sneaker_images {
@@ -133,46 +138,6 @@
     padding-right: 4px;
     text-align: center;
 }
-
-
-
-.pose {
-    background-color: white;
-    margin: 15px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 5px 5px black;
-    padding: 10px 10px;
-    position: relative;
-
-}
-
-.card {
-    height: 50vh;
-    margin-bottom: 30px;
-    background-size: cover;
-    border-radius: 5px;
-
-
-}
-
-.card-btn {
-    padding: 10px 10px;
-    background-color: black;
-    border-radius: 15px;
-    transition: all .9s ease-in-out;
-    color: white;
-    width: 8px 8px;
-    margin: 1px 60px 1px 60px;
-
-}
-
-.card-btn:hover {
-    background-color: goldenrod;
-    color: black;
-
-}
-
 
 
 .SeanKempDunk {
@@ -221,155 +186,64 @@
 }
 
 
-.pose p {
+.image_card p,
+h2,
+a {
     padding: 10px;
-    text-align: center;
-}
-
-.pose h2 {
-    padding: 10px;
-    text-align: center;
-}
-
-.pose a {
     text-align: center;
     display: block;
 }
 
 
-.pose:hover {
+.image_card:hover {
     /*hover notworking for some reason, worked when I deleted my borders*/
     cursor: pointer;
     transition: all .05s ease 0s;
     transform: scale(1.03);
 }
 
-.navbar-ulList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: white;
-}
 
-.shoes {
-    max-width: 200px;
-    height: 110px;
-    margin-bottom: 50px;
-}
-
-.move-1 {
+.move-left {
     position: absolute;
     padding: 4px;
     margin-left: 5px;
     border-radius: 30%;
+    left: 10px;
     top: 50%;
     font-size: 16px;
+    cursor: pointer;
+
+}
+
+.move-right {
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    margin-right: 5px;
+    right: 10px;
+    font-size: 16px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.move-green {
     background-color: green;
 }
 
-.move-2 {
-    position: absolute;
-    padding: 4px;
-    top: 50%;
-    margin-right: 5px;
-    right: 10px;
-    background-color: green;
-    font-size: 16px;
-    border-radius: 30%;
-}
-
-.move-3 {
-    position: absolute;
-    padding: 4px;
-    margin-left: 5px;
-    border-radius: 30%;
-    top: 50%;
-    font-size: 16px;
+.move-red {
     background-color: red;
 }
 
-.move-4 {
-    position: absolute;
-    padding: 4px;
-    top: 50%;
-    margin-right: 5px;
-    right: 10px;
-    background-color: red;
-    font-size: 16px;
-    border-radius: 30%;
-}
-
-.move-5 {
-    position: absolute;
-    padding: 4px;
-    margin-left: 5px;
-    border-radius: 30%;
-    top: 50%;
-    font-size: 16px;
+.move-orange {
     background-color: orangered;
-
 }
 
-.move-6 {
-    position: absolute;
-    padding: 4px;
-    top: 50%;
-    margin-right: 5px;
-    right: 10px;
-    background-color: orangered;
-    font-size: 16px;
-    border-radius: 30%;
-
-
-}
-
-.move-7 {
-    position: absolute;
-    padding: 4px;
-    margin-left: 5px;
-    border-radius: 30%;
-    top: 50%;
-    font-size: 16px;
+.move-blue {
     background-color: blue;
-
-
 }
 
-.move-8 {
-    position: absolute;
-    padding: 4px;
-    top: 50%;
-    margin-right: 5px;
-    right: 10px;
-    background-color: blue;
-    font-size: 16px;
-    border-radius: 30%;
-
-
-}
-
-.move-9 {
-    position: absolute;
-    padding: 4px;
-    margin-left: 5px;
-    border-radius: 30%;
-    top: 50%;
-    font-size: 16px;
+.move-purple {
     background-color: purple;
-
-
-}
-
-.move-10 {
-    position: absolute;
-    padding: 4px;
-    top: 50%;
-    margin-right: 5px;
-    right: 10px;
-    background-color: purple;
-    font-size: 16px;
-    border-radius: 30%;
-
 }
 
 .footer {
@@ -380,51 +254,82 @@
     text-align: center;
     border-top: 2px solid black;
     padding: 10px;
-    margin-top: 25px;
+    margin-top: 30px;
+    cursor: pointer;
 
+}
+
+.toggle_button {
+    /*hamburgertoggle postioning*/
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 41px;
+}
+
+
+.toggle_button .bar {
+    /*hamburgertoggle bar style*/
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    border-radius: 10px;
 }
 
 
 @media only screen and (max-width: 600px) {
     .navbar-ulList {
-        flex-direction: column;
-        background-image: url(./WebsiteImages/bballcourt.jpg); 
-        margin-top: 40px;
+        transform: translateY(-100%);
 
     }
 
-    .siteheader {
-        flex-direction: column;
-        margin: 0px 0px 70px 0px;
-        width: 100%;
-        background-image: url(./WebsiteImages/bballcourt.jpg);
-        
+    .toggle_button .bar:hover {
+        cursor: pointer;
     }
+
 
     .main_title {
-            padding-top: 45px;
+        font-size: 35px;
+    }
+
+    .navbar-hide {
+        transform: translateY(0%);
+        transition: all 1s;
 
     }
 
-    .logo-images {
-        width: 100%;
-    
-        
+    .toggle_button {
+        /*hamburgertoggle postioning*/
+        display: flex;
+
     }
 
-    .logo-item2 {
+    .navbar-ulList ul {
+        /*changes navlinks to column and center*/
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+
+    }
+
+
+    .nikeLogo {
         display: none;
     }
 
-    .logo-item3 {
+    .jordanLogo {
         display: none;
     }
 
-    .logo-item4 {
+    .reebokLogo {
         display: none;
     }
 
-    .logo-item5 {
+    .adidasLogo {
         display: none;
     }
 
@@ -433,5 +338,21 @@
         display: none;
     }
 
+    .sneakerLogo {
+        margin-left: 20px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        height: 40px;
+        width: 30px;
+    }
 
+}
+
+@media only screen and (max-width: 350px) {
+
+    .main_title {
+        font-size: 25px;
+        color: blueviolet;
+    }
 }

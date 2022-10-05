@@ -10,6 +10,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,700&family=Oswald&display=swap"
+        rel="stylesheet">
     <title>90 Basketball Sneakers</title>
 
 </head>
@@ -17,82 +24,95 @@
 <body>
 
     <header class="siteheader">
-        <nav class="navbar" id="navbar_1">
-            <img class="logo logo-item1" src="./WebsiteImages/sneakers--v2.png" alt="sneakerCompanyLogo">
-            <div class="logo-images">
-                <img class="logo logo-item2" src="./WebsiteImages/nike.jpg" alt="nikelogo">
-                <img class="logo logo-item3" src="./WebsiteImages/jordanlogo.png" alt="jordanlogo">
-                <img class="logo logo-item4" src="./WebsiteImages/reebok.png" alt="reeboklogo">
-                <img class="logo logo-item5" src="./WebsiteImages/adidas-trefoil.png" alt="adidaslogo">
-                <ul class="navbar-ulList" id="navbarList">
-                    <li class="nav-li"><a href="#">Home</a></li>
-                    <li class="nav-li"><a href="#">About</a></li>
+        <div class="companyLogo" title="sneaker company name">
+            <img class="logo sneakerLogo" src="./WebsiteImages/sneakers--v2.png" alt="sneakerCompanyLogo">
+        </div>
+        <div class="logo-images">
+            <img class="logo nikeLogo" src="./WebsiteImages/nike.jpg" alt="nikelogo">
+            <img class="logo jordanLogo" src="./WebsiteImages/jordanlogo.png" alt="jordanlogo">
+            <img class="logo reebokLogo" src="./WebsiteImages/reebok.png" alt="reeboklogo">
+            <img class="logo adidasLogo" src="./WebsiteImages/adidas-trefoil.png" alt="adidaslogo">
+            <a href="#" class="toggle_button" id="buttonChange">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-ulList" id="navbarList">
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-        </nav>
+            </div>
         </div>
     </header>
     <section class="title-content">
         <h1 class="main_title">90s Basketball Sneaker Era</h1>
     </section>
     <section class="sneaker_images">
-        <div class="sneaker-item  sneakers__images">
+        <div class="sneaker-item">
             <img class="shoes seankempSneaker" src="./WebsiteImages/seankempsneakers1.jpg" alt="sean kemp sneakers">
             <h2 class="shoeName kempHeader">Kamikaze II</h2>
         </div>
-        <div class="sneaker-item sneakers__images">
+        <div class="sneaker-item">
             <img class="shoes jordanSneaker" src="./WebsiteImages/jordansspacejam.jpg" alt="jordan sneakers">
             <h2 class="shoeName jordanHeader">Jordan III</h2>
         </div>
-        <div class="sneaker-item sneakers__images">
+        <div class="sneaker-item">
             <img class="shoes barkelySneaker" src="./WebsiteImages/charlesb1.png" alt="charles barkley sneakers">
             <h2 class="shoeName barkleyHeader">Air Max 2 CB</h2>
         </div>
-        <div class="sneaker-item sneakers__images">
+        <div class="sneaker-item">
             <img class="shoes pennySneaker" src="./WebsiteImages/penny.jpg" alt="penny hardway sneakers">
             <h2 class="shoeName pennyHeader">Air Max Penny 1</h2>
         </div>
-        <div class="sneaker-item sneakers__images">
+        <div class="sneaker-item">
             <img class="shoes kobeSneaker" src="./WebsiteImages/Kobe-1-sneaker-freaker.jpg" alt="kobe bryant sneakers">
             <h2 class="shoeName kobeHeader">Crazy I</h2>
         </div>
     </section>
     <main class="container-2">
-        <div class="pose">
-            <button class="move-1 btn-effect" id="green-left"><i class="fa-solid fa-backward"></i></button>
-            <button class="move-2 btn-effect" id="green-right"><i class="fa-solid fa-forward"></i></button>
+        <div class="image_card" title="Sean Kemp dunking">
+            <button class="move-left move-green" id="green-left"><i class="fa-solid fa-backward"></i></button>
+            <button class="move-right move-green" id="green-right"><i class="fa-solid fa-forward"></i></button>
             <div id="seanKempPic" class="card SeanKempDunk"></div>
-            <h2>Sean Kemp</h2>
-            <p><i>Seattle Sonics Player</i></p>
-            <a class="card-btn" href="#">Read More</a>
+            <article class="seanKempBio" style="height: 50px;">
+                <h2>Sean Kemp</h2>
+                <p><i>Seattle Sonics Player</i></p>
+                <p>Hey there</p>
+                <p>Hey there</p>
+                <a class="card-btn" href="#">Read More</a>
+            </article>
         </div>
-        <div class="pose">
-            <button class="move-3 btn-effect" id="red-left"><i class="fa-solid fa-backward"></i></button>
-            <button class="move-4 btn-effect" id="red-right"><i class="fa-solid fa-forward"></i></button>
+        <div class="image_card" title="Micheal Jordan leaps over player">
+            <button class="move-left move-red" id="red-left"><i class="fa-solid fa-backward"></i></button>
+            <button class="move-right move-red" id="red-right"><i class="fa-solid fa-forward"></i></button>
             <div id="MichaelJordanPic" class="card MichaelJordanStance"></div>
             <h2>Michael Jordan</h2>
             <p><i>Bulls</i></p>
+            <p>Hfell of a player</p>
+            <p>Hfell of a player</p>
             <a class="card-btn" href="#">Read More</a>
 
         </div>
-        <div class="pose">
-            <button class="move-5 btn-effect" id="orange-left"><i class="fa-solid fa-backward"></i></button>
-            <button class="move-6 btn-effect" id="orange-right"><i class="fa-solid fa-forward"></i></button>
+        <div class="image_card" title="Charles Barkely intense game moment">
+            <button class="move-left move-orange" id="orange-left"><i class="fa-solid fa-backward"></i></button>
+            <button class="move-right move-orange" id="orange-right"><i class="fa-solid fa-forward"></i></button>
             <div id="CharlesBarkleyPic" class="card SirCharlesBarkley"></div>
             <h2>Sir Charles Barkley</h2>
             <p><i>Pheonix Suns</i></p>
             <a class="card-btn" href="#">Read More</a>
         </div>
-        <div class="pose">
-            <button class="move-7 btn-effect" id="blue-left"><i class="fa-solid fa-backward"></i></button>
-            <button class="move-8 btn-effect" id="blue-right"><i class="fa-solid fa-forward"></i></button>
+        <div class="image_card" title="Penny Harday taking a the game over">
+            <button class="move-left move-blue" id="blue-left"><i class="fa-solid fa-backward"></i></button>
+            <button class="move-right move-blue" id="blue-right"><i class="fa-solid fa-forward"></i></button>
             <div id="PennyHardway" class="card Penny1"></div>
             <h2>Penny Hardway</h2>
             <p><i>Orlando Magic</i></p>
             <a class="card-btn" href="#">Read More</a>
         </div>
-        <div class="pose">
-            <button class="move-9 btn-effect" id="purple-left"><i class="fa-solid fa-backward"></i></button>
-            <button class="move-10 btn-effect" id="purple-right"><i class="fa-solid fa-forward"></i></button>
+        <div class="image_card" title="Kobe Bryant signs with the Lakers">
+            <button class="move-left move-purple" id="purple-left"><i class="fa-solid fa-backward"></i></button>
+            <button class="move-right move-purple" id="purple-right"><i class="fa-solid fa-forward"></i></button>
             <div id="KobeBryantPic" class="card KobeBryant-1"></div>
             <h2>Kobe B.Bryant</h2>
             <p><i>L.A. Lakers</i></p>
