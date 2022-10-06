@@ -48,7 +48,7 @@ barkleypic2.addEventListener("click", barkley2);
 
 function penny1() {
   let pennyPic1 = document.getElementById("PennyHardway");
-  pennyPic1.classList.toggle("Penny2");
+  pennyPic1.classList.toggle("jordan1");
 }
 
 let pennyPic1 = document.getElementById("blue-left");

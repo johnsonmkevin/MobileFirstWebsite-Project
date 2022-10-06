@@ -1,4 +1,4 @@
-* {
+*, body {
     padding: 0;
     margin: 0;
     border: 0;
@@ -36,7 +36,7 @@
     box-shadow: 5px 5px black;
     padding: 10px 10px;
     position: relative;
-    gap: 10px;
+
 
 }
 
@@ -55,6 +55,7 @@
     color: white;
     width: 8px 8px;
     margin: 1px 60px 1px 60px;
+    bottom: 2px;
 }
 
 .card-btn:hover {
@@ -209,7 +210,7 @@ a {
     margin-left: 5px;
     border-radius: 30%;
     left: 10px;
-    top: 50%;
+    top: 40%;
     font-size: 16px;
     cursor: pointer;
 
@@ -218,7 +219,7 @@ a {
 .move-right {
     position: absolute;
     padding: 4px;
-    top: 50%;
+    top: 40%;
     margin-right: 5px;
     right: 10px;
     font-size: 16px;
@@ -280,7 +281,10 @@ a {
     border-radius: 10px;
 }
 
-
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
 @media only screen and (max-width: 600px) {
     .navbar-ulList {
         transform: translateY(-100%);
@@ -289,6 +293,7 @@ a {
 
     .toggle_button .bar:hover {
         cursor: pointer;
+        background-image: url(./WebsiteImages/bballcourt.jpg);
     }
 
 
@@ -298,7 +303,7 @@ a {
 
     .navbar-hide {
         transform: translateY(0%);
-        transition: all 1s;
+        transition: all 3s;
 
     }
 
@@ -339,7 +344,6 @@ a {
     }
 
     .sneakerLogo {
-        margin-left: 20px;
         height: 30px;
         position: absolute;
         top: 15px;
@@ -353,6 +357,23 @@ a {
 
     .main_title {
         font-size: 25px;
-        color: blueviolet;
+        color: black;
     }
+}
+
+@media only screen and (max-width:200px) {
+    .main_title {
+        font-size: 20px;
+        color: black;
+    }
+
+    .sneakerLogo {
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        height: 40px;
+        width: 30px;
+        left: 1px;
+    }
+
 }
