@@ -85,5 +85,4 @@ function menuMobile() {
 }
 
 let kevinButton = document.getElementById("buttonChange");
-
 kevinButton.addEventListener("click", menuMobile);
