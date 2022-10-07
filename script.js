@@ -48,7 +48,7 @@ barkleypic2.addEventListener("click", barkley2);
 
 function penny1() {
   let pennyPic1 = document.getElementById("PennyHardway");
-  pennyPic1.classList.toggle("jordan1");
+  pennyPic1.classList.toggle("Penny2");
 }
 
 let pennyPic1 = document.getElementById("blue-left");
@@ -61,6 +61,7 @@ function penny2() {
 
 let pennyPic2 = document.getElementById("blue-right");
 pennyPic2.addEventListener("click", penny2);
+
 
 function kobe1() {
   let kobePic1 = document.getElementById("KobeBryantPic");
@@ -84,5 +85,5 @@ function menuMobile() {
   navbarList.classList.toggle("navbar-hide");
 }
 
-let kevinButton = document.getElementById("buttonChange");
-kevinButton.addEventListener("click", menuMobile);
+let navButton = document.getElementById("buttonChange");
+navButton.addEventListener("click", menuMobile);
